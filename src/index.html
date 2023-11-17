@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Funiro Furniture" />
+  <meta name="theme-color" content="#E89F71" />
+  <link rel="shortcut icon" type="image/svg" href="./img/Cart.svg" />
+  <link rel="stylesheet" href="./index.css">
+
+  <title>Funiro</title>
+</head>
+<body>
+  <main class="relative">
+    <nav class="mx-auto absolute z-[2] top-2 md:top-4 xl:top-6 left-0 right-0 flex flex-row justify-between md:justify-around 2xl:justify-between items-baseline gap-x-3 container max-w-screen-2xl px-3 py-[calc(30px,8vw,120px)]">
+      <f2 class="text-[clamp(2.3rem,3vw,4.7rem)] text-slate-800 font-semibold">Funiro.</f2>
+      <ul class="hidden lg:flex gap-x-2 md:gap-x-4 xl:gap-x-6 justify-between">
+        <li class="text-zinc-600 tracking-wider text-xl">Products</li>
+        <li class="text-zinc-600 tracking-wider text-xl">Rooms</li>
+        <li class="text-zinc-600 tracking-wider text-xl">Inspirations</li>
+      </ul>
+      <input type="search" class="px-3 md:px-4 lg:px-6 py-3 text-zinc-500 w-[33%] md:w-30 focus:outline focus:outline-zinc-300" placeholder="Search for minimalist chair">
+      <ul class="flex flex-row gap-4 xl:gap-6 justify-self-end">
+        <li class="flex items-center">
+          <button class="bg-transparent"><img src="./img/Heart.svg" alt=""> </button>
+        </li>
+        <li class="flex items-center">
+          <button class="bg-transparent"><img src="./img/Cart.svg" alt=""> </button>
+        </li>
+        <li class="flex items-center">
+          <button class="bg-transparent"><img src="./img/Ellipse 2.svg" alt=""> </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- ============ -->
+    <!-- Hero Section -->
+    <!-- ============ -->
+    <section class="hero relative bg-gradient-to-r from-[#F9F1E7] from-70% to-70% to-primary-light h-screen">
+      <div class="absolute left-[5%] md:left-[10%] top-0 bottom-0 my-auto flex flex-col justify-around p-[clamp(10px,10%,30px)] md:p-[clamp(20px,45%,70px)] h-max min-h-[40vh] w-[90%] md:w-[clamp(500px,80%,650px)] gap-4 backdrop-blur-md bg-white/70 z-[1]">
+        <h1 class="text-slate-700 font-semibold leading-[clamp(4rem,10vw,6rem)] text-[clamp(50px,9vw,80px)]">High-Quality Furniture Just For You</h1>
+        <p class="text-slate-600 leading-[clamp(1.6rem,4vw,2.5rem)] text-xl md:text-[clamp(23px,2.2vw,26px)]">Our furniture is made from selected and best quality materials that are suitable for your dream home</p>
+        <button class="py-4 lg:py-6 bg-primary hover:bg-primary/70 duration-300 text-xl text-white font-semibold font-md">Shop Now</button>
+      </div>
+
+      <!-- Hero background images positioned absolutely -->
+      <div class="grid w-full grid-cols-[1fr_2fr_0.17fr] absolute bottom-0 h-[clamp(70vh,60vw,75vh)] gap-2 lg:gap-4 2xl:gap-6">
+        <img src="./img/hero2.png" alt="" class="h-full object-cover">
+        <img src="./img/hero1.png" alt="" class="h-full object-cover">
+        <img src="./img/hero3.png" alt="" class="h-full object-cover">
+      </div>
+    </section>
+
+    <!-- ============= -->
+    <!-- Perks Section -->
+    <!-- ============= -->
+    <section class="perks flex flex-wrap container justify-items-center max-w-screen-2xl mx-auto my-[clamp(4rem,8vh,10rem)] justify-center md:justify-around 2xl:justify-between px-4 gap-y-12 gap-x-8">
+      <div class="grid grid-flow-col items-center gap-2 md:gap-3 lg:gap-4 max-w-fit">
+        <figure class="">
+          <img src="./img/trophy 1.svg" alt="" class="">
+        </figure>
+        <div class="">
+          <h3 class="text-xl font-medium text-slate-600">High Quality</h3>
+          <p class="text-stone-400 font-medium text-sm">Crafted from top materials</p>
+        </div>
+      </div>
+
+      <div class="grid grid-flow-col items-center gap-2 md:gap-3 lg:gap-4 max-w-fit">
+        <figure class="">
+          <img src="./img/guarantee.svg" alt="" class="">
+        </figure>
+        <div class="">
+          <h3 class="text-xl font-medium text-slate-600">Warranty Protection</h3>
+          <p class="text-stone-400 font-medium text-sm">Over 2 years</p>
+        </div>
+      </div>
+
+      <div class="grid grid-flow-col items-center gap-2 md:gap-3 lg:gap-4 max-w-fit">
+        <figure class="">
+          <img src="./img/shipping.svg" alt="" class="">
+        </figure>
+        <div class="">
+          <h3 class="text-xl font-medium text-slate-600">Free Shipping</h3>
+          <p class="text-stone-400 font-medium text-sm">Order over $150</p>
+        </div>
+      </div>
+
+      <div class="grid grid-flow-col items-center gap-2 md:gap-3 lg:gap-4 max-w-fit">
+        <figure class="">
+          <img src="./img/customer-support.svg" alt="" class="">
+        </figure>
+        <div class="">
+          <h3 class="text-xl font-medium text-slate-600">24 / 7 Support</h3>
+          <p class="text-stone-400 font-medium text-sm">Dedicated support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ -->
+    <!-- Products Section -->
+    <!-- ================ -->
+    <h2 class="mt-32 mb-4 text-[40px] md:text-[45px] font-semibold text-slate-800 text-center mx-2">Our Products</h2>
+    <section class="products mx-auto grid grid-cols-2 md:grid-cols-3 p-1 md:p-2 lg:p-4 lg:grid-cols-4 container max-w-screen-2xl gap-1 md:gap-2 lg:gap-4 xl:gap-6">
+      <div class="relative card grid grid-rows-[2fr_1fr] h-[400px]">
+        <figure class="overflow-hidden peer w-full bg-red-400 relative">
+          <img src="./img/product1.png" class="w-full h-full object-cover">
+          <div class="absolute top-3 right-3 w-max text-sm flex items-center h-auto aspect-square rounded-full font-bold text-white bg-rose-600 p-1.5">-30%</div>
+        </figure>
+        <div class="px-2 peer py-4 md:p-3 bg-zinc-100">
+          <h3 class="text-2xl font-bold text-slate-800">Table</h3>
+          <p class="text-sm text-stone-600">Stylish cafe table</p>
+          <div class="flex flex-row items-center gap-1 justify-between">
+            <h4 class="text-lg font-semibold text-slate-700">Rp 500.000</h4>
+            <p class="text-sm text-stone-400 line-through">Rp 700.00</p>
+          </div>
+        </div>
+          <!-- Hover Cover -->
+          <div class="absolute transition-opacity opacity-0 duration-500 peer-hover:opacity-100 hidden peer-hover:flex top-0 left-0 h-full w-full p-4 items-center justify-center bg-stone-600/70">
+            <button class="bg-white max-w-[160px] text-primary w-full text-lg px-4 py-3 font-semibold">Add to cart</button>
+          </div>
+      </div>
+
+      <div class="card grid grid-rows-[2fr_1fr] h-[400px]">
+        <figure class="overflow-hidden">
+          <img src="./img/product2.png" class="w-full h-full object-cover">
+        </figure>
+        <div class="px-2 py-4 md:p-3 bg-zinc-100">
+          <h3 class="text-2xl font-bold text-slate-800">Couch</h3>
+          <p class="text-sm text-stone-600">Stylish cafe coucj</p>
+          <div class="flex flex-row items-center gap-1 justify-between">
+            <h4 class="text-lg font-semibold text-slate-700">Rp 500.000</h4>
+            <p class="text-sm text-stone-400 line-through">Rp 700.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative card grid grid-rows-[2fr_1fr] h-[400px]"> 
+        <figure class="overflow-hidden peer w-full bg-red-400 relative">
+          <img src="./img/product3.png" class="w-full h-full object-cover">
+          <div class="absolute top-3 right-3 w-max text-sm flex items-center h-auto aspect-square rounded-full font-bold text-white bg-rose-600 p-1.5">-30%</div>
+        </figure>
+        <div class="px-2 peer py-4 md:p-3 bg-zinc-100">
+          <h3 class="text-2xl font-bold text-slate-800">Scaffle</h3>
+          <p class="text-sm text-stone-600">Stylish industry scaffle</p>
+          <div class="flex flex-row items-center gap-1 justify-between">
+            <h4 class="text-lg font-semibold text-slate-700">Rp 500.000</h4>
+            <p class="text-sm text-stone-400 line-through">Rp 700.00</p>
+          </div>
+        </div>
+          <!-- Hover Cover -->
+          <div class="absolute transition-opacity opacity-0 duration-500 peer-hover:opacity-100 hidden peer-hover:flex top-0 left-0 h-full w-full p-4 items-center justify-center bg-stone-600/70">
+            <button class="bg-white max-w-[160px] text-primary w-full text-lg px-4 py-3 font-semibold">Add to cart</button>
+          </div>
+      </div>
+    
+      <div class="card grid grid-rows-[2fr_1fr] h-[400px]">
+        <figure class="overflow-hidden">
+          <img src="./img/product5.png" class="w-full h-full object-cover">
+        </figure>
+        <div class="px-2 py-4 md:p-3 bg-zinc-100">
+          <h3 class="text-2xl font-bold text-slate-800">Lamp</h3>
+          <p class="text-sm text-stone-600">Luminiscent lamp</p>
+          <div class="flex flex-row items-center gap-1 justify-between">
+            <h4 class="text-lg font-semibold text-slate-700">Rp 500.000</h4>
+            <p class="text-sm text-stone-400 line-through">Rp 700.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button class="border mx-auto mt-6 mb-16 font-semibold text-lg border-primary flex justify-center px-20 py-2.5 bg-white text-primary">Show More</button>
+
+    <!-- ================ -->
+    <!-- Carousel Section -->
+    <!-- ================ -->
+    <section class=" bg-primary-light ">
+      <div class="carousel overflow-hidden relative py-[clamp(20px,5vw,60px)] p-4 max-w-screen-2xl grid grid-cols-1 md:grid-cols-3 mx-auto h-[clamp(500px,60vh,800px)] gap-8 md:gap-2 lg:gap-4 2xl:gap-6">
+        <div class="md:pl-[clamp(10px,2.5vw,100px)] flex flex-col justify-center gap-3">
+          <h2 class="text-[clamp(30px,3.6vw,50px)] leading-10 text-slate-700 font-bold">50+ Beautiful rooms inspiration</h2>
+          <p class="text-md text-slate-500">Our designer already made a lot of beautiful proeotype of rooms that inspire you</p>
+          <button class="px-8 py-3 bg-primary w-max font-bold text-white">Explore More</button>
+        </div>
+        <div class="col-span-2 snap-mandatory no-scrollbar overflow-scroll snap-x flex flex-row pr-[250px] md:pr-[calc(100%-350px)] gap-2 lg:gap-3 2xl:gap-4">
+          <div class="overflow-hidden snap-always snap-start w-1/2 min-w-[250px] md:min-w-[350px] max-w-[450px]">
+            <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/1.png" alt="">
+          </div>
+          <div class="overflow-hidden snap-always snap-start w-1/2 min-w-[250px] md:min-w-[350px] max-w-[450px]">
+            <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/2.png" alt="">
+          </div>
+          <div class="overflow-hidden snap-always snap-start w-1/2 min-w-[250px] md:min-w-[350px] max-w-[450px]">
+            <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/3.png" alt="">
+          </div>
+          <div class="overflow-hidden snap-always snap-start w-1/2 min-w-[250px] md:min-w-[350px] max-w-[450px]">
+            <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/4.png" alt="">
+          </div>
+          <div class="overflow-hidden snap-always snap-start w-1/2 min-w-[250px] md:min-w-[350px] max-w-[450px]">
+            <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/5.png" alt="">
+          </div>
+          <div class="overflow-hidden snap-always snap-start w-1/2 min-w-[250px] md:min-w-[350px] max-w-[450px]">
+            <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/6.png" alt="">
+          </div>
+          <div class="overflow-hidden snap-always snap-start w-1/2 min-w-[250px] md:min-w-[350px] max-w-[450px]">
+            <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/7.png" alt="">
+          </div>
+        </div>
+        <div class="right-cover absolute flex items-center left-[270px] md:left-[calc(33.3%+366px)] w-full bottom-0 h-[20%] bg-primary-light">
+          <!-- <h3 class="text-slate-600 absolute top-8 left-4 font-semibold text-[27px]">Scroll Sideways</h3> -->
+          <button class="absolute top-[20%] left-[15px] w-12 p-2 h-auto aspect-square duration-300 bg-primary hover:bg-[#f1c5aa] rounded-full"><img src="./img/Right 24px-1.svg" class="w-full" alt=""></button>
+          <!-- <button class="w-12 p-2 h-auto aspect-square duration-300 bg-primary hover:bg-[#f1c5aa] rounded-full"><img src="./img/ 24px-1.svg" class="w-full" alt=""></button> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ -->
+    <!-- Showcase Section -->
+    <!-- ================ -->
+    <p class="text-xl mt-[10vh] mb- font-bold text-center mx-4 mb-10 text-slate-700">Share your setup with</p>
+    <section class="showcase h-[clamp(500px,65vw,1000px)] grid grid-rows-[repeat(9,_1fr)] grid-cols-[repeat(14,_1fr)] gap-2 lg:gap-3 2xl:gap-4">
+      <div class="flex justify-center col-start-3 col-span-10 row-start-1 row-span-1">
+        <h2 class="text-[clamp(30px,3.6vw,50px)] text-slate-700 font-bold">#FuniroFurniture</h2>
+      </div>
+      <div class="overflow-hidden col-start-1 col-span-2 row-start-1 row-span-5">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/1.png" alt="">
+      </div>
+      <div class="overflow-hidden col-start-3 col-span-4 row-start-2 row-span-4">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/2.png" alt="">
+      </div>
+      <div class="overflow-hidden col-start-7 col-span-3 row-start-3 row-span-5">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/3.png" alt="">
+      </div>
+      <div class="overflow-hidden col-start-10 col-span-3 row-start-2 row-span-5">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/4.png" alt="">
+      </div>
+      <div class="overflow-hidden col-start-14 col-span-2 row-start-1 row-span-6">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/5.png" alt="">
+      </div>
+      <div class="overflow-hidden col-start-1 col-span-3 row-start-6 row-span-4">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/6.png" alt="">
+      </div>
+      <div class="overflow-hidden col-start-4 col-span-3 row-start-6 row-span-3">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/7.png" alt="">
+      </div>
+      <div class="overflow-hidden col-start-10 col-span-2 row-start-7 row-span-2">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/8.png" alt="">
+      </div>
+      <div class="overflow-hidden col-start-12 col-span-3 row-start-7 row-span-3">
+        <img class="w-full h-full object-cover hover:scale-110 ease-in-out duration-500" src="./img/9.png" alt="">
+      </div>
+    </section>
+  </main>
+
+  <div class="line h-[1px] mt-[clamp(3rem,9vh,8rem)] mb-[clamp(2rem,5vh,7rem)] w-[93%] bg-stone-300 container mx-auto max-w-screen-2xl justify-between md:justify-around 2xl:justify-between"></div>
+
+  <footer class="container grid grid-cols-1 md:grid-cols-[max-content,1fr] lg:grid-cols-[max-content,1fr,max-content] items-start mx-auto max-w-screen-2xl w-[93%] justify-center lg:justify-around 2xl:justify-between gap-y-8 my-16">
+    <table cellpadding="5" class="max-w-[380px]">
+      <thead><tr><td class="text-zinc-500 text-2xl font-semibold">Funiro</td></tr>
+      </thead>
+      <tbody>
+        <tr><td class="text-stone-400 tracking-wide text-">Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</td></tr>
+        <tr><td class="text-stone-400 tracking-wide flex flex-row align-center gap-2"><img src="./img/Pin 24px.svg" alt=""> Sawojajar Malang, Indonesia</td></tr>
+        <tr><td class="text-stone-400 tracking-wide flex flex-row align-center gap-2"><img src="./img/Phone 24px.svg" alt=""> Sawojajar Malang, Indonesia</td></tr>
+        <tr><td class="text-stone-400 tracking-wide text-">www.funiro.com</td></tr>
+      </tbody>
+    </table>
+    <table cellpadding="5" class="table-fixed">
+      <thead class="">
+        <tr class="">
+          <td class="text-stone-500 text-2xl font-semibold">Menu</td>
+          <td class="text-stone-500 text-2xl font-semibold">Account</td>
+          <td class="text-stone-500 text-2xl font-semibold min-w-[190px]">Stay Connected</td>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr class="">
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">Products</a></td>
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">My Account</a></td>
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">Facebook</a></td>
+        </tr>
+        <tr class="">
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">Rooms</a></td>
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">Checkout</a></td>
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">Instagram</a></td>
+        </tr>
+        <tr class="">
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">Inspirations</a></td>
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">My Cart</a></td>
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">Twitter</a></td>
+        </tr>
+        <tr class="">
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">About Us</a></td>
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">My Catalog</a></td>
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class=""></a></td>
+        </tr>
+        <tr class="">
+          <td class="text-stone-400 tracking-wide font-medium"><a href="" class="">Terms & Policy</a></td>
+        </tr>
+    </tbody>
+    </table>
+    <table cellpadding="4" class="max-w-max">
+      <thead>
+        <tr><td class="text-stone-500 text-2xl font-semibold">Stay Updated</td></tr>
+        <tr class=""><td class="text-stone-400 tracking-wide font-medium"><input type="search" class="px-6 py-3 bg-slate-200 text-zinc-500 focus:outline focus:outline-zinc-300" placeholder="Enter your email"></td>        </tr>
+      </thead>
+    </table>
+  </footer>
+</body>
+</html>
