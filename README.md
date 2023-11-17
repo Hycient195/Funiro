@@ -1,6 +1,9 @@
 # Funiro
 Static HTML landing page styled entirely with Tailwind CSS
 
+## Deployment at
+https://funiro-decor.vercel.app
+
 
 ## Install Dependencies
 # npm install
